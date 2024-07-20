@@ -1,0 +1,45 @@
+#map {
+  height: 650px;
+  width: 100%;
+}
+.leaflet-popup-content {
+  width: 550px !important;
+  height: 250px !important;
+}
+.leaflet-popup-content iframe {
+  width: 100%;
+  height: 100%;
+}
+.marker-pin {
+  width: 5px;
+  height: 5px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+.nav-buttons button {
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.nav-buttons button:hover {
+  background-color: #45a049;
+}
